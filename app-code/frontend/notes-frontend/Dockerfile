@@ -10,6 +10,8 @@ RUN npm install -g
 # Copy the rest of the application files
 COPY . /app/
 
+
+RUN npm install react-scripts
 # Build the React app
 RUN npm run build
 
