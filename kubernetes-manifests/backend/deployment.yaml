@@ -44,16 +44,16 @@ spec:
             value: mydatabase
         ports:
         - containerPort: 8000
-        livenessProbe: 
-          httpGet:
-            path: /api
-            port: 8000
-          initialDelaySeconds: 2
-          periodSeconds: 5
-        readinessProbe:
-          httpGet:
-            path: /api
-            port: 8000
-          initialDelaySeconds: 5
-          periodSeconds: 5
-          successThreshold: 1
+        # livenessProbe: 
+        #   httpGet:
+        #     path: /api
+        #     port: 8000
+        #   initialDelaySeconds: 2
+        #   periodSeconds: 5
+        # readinessProbe:
+        #   httpGet:
+        #     path: /api
+        #     port: 8000
+        #   initialDelaySeconds: 5
+        #   periodSeconds: 5
+        #   successThreshold: 1
